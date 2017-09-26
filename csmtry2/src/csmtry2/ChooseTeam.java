@@ -47,7 +47,7 @@ public class ChooseTeam extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(240, 240, 240));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/csmtry2/image2.jpg"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(2000, 1080));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1965, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1090));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
