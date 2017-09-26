@@ -60,7 +60,7 @@ public class nn1 extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setFont(new java.awt.Font("Tahoma", 3, 60)); // NOI18N
         jButton3.setForeground(new java.awt.Color(240, 240, 240));
-        jButton3.setText("Continue");
+        jButton3.setText("New game");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 750, 380, 90));
