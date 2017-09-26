@@ -4,6 +4,7 @@ package csmtry2;
 
 
 import java.awt.Toolkit;
+import java.awt.event.WindowEvent;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -27,6 +28,10 @@ public class nn1 extends javax.swing.JFrame {
         int xsize = (int) tk.getScreenSize().getWidth();
         int ysize = (int) tk.getScreenSize().getHeight();
         this.setSize(xsize, ysize);
+    }
+        public void close(){
+    WindowEvent winClosingEvent = new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
+    Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
     }
 
     /**
@@ -63,6 +68,11 @@ public class nn1 extends javax.swing.JFrame {
         jButton3.setText("New game");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 750, 380, 90));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 0));
@@ -84,6 +94,12 @@ public class nn1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    ChooseTeam ct = new ChooseTeam();
+    ct.setVisible(true);
+    close();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
